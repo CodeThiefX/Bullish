@@ -119,3 +119,70 @@ html {
     background-position: 80% 100%;
   }
 }
+
+/* Rocket moving from left to right and back infinitely animation */
+.rocket {
+  position: absolute;
+  top: 22%;
+  animation: herofly 20s linear infinite;
+}
+
+@keyframes herofly {
+  0% {
+    transform: translateX(-10vw) scaleX(1);
+  }
+
+  50% {
+    transform: translateX(100vw) scaleX(1);
+  }
+
+  51% {
+    transform: translateX(100vw) scaleX(-1);
+  }
+
+  100% {
+    transform: translateX(-110vw) scaleX(-1);
+  }
+}
+
+.rocket-2 {
+  position: absolute;
+  top: 22%;
+  animation: herofly-2 20s linear infinite;
+}
+
+@keyframes herofly-2 {
+  0% {
+    transform: translateX(10vw) scaleX(-1);
+  }
+
+  50% {
+    transform: translateX(-100vw) scaleX(-1);
+  }
+
+  51% {
+    transform: translateX(-100vw) scaleX(1);
+  }
+
+  100% {
+    transform: translateX(110vw) scaleX(1);
+  }
+}
+
+/* @keyframes heroflyMobile {
+  0% {
+    transform: translateX(-60vw) scaleX(1);
+  }
+
+  50% {
+    transform: translateX(100vw) scaleX(1);
+  }
+
+  51% {
+    transform: translateX(100vw) scaleX(-1);
+  }
+
+  100% {
+    transform: translateX(-60vw) scaleX(-1);
+  }
+} */
